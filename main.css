@@ -27,9 +27,9 @@ body{
 .pitch2{
 	margin-top: 5%;
 }
-.main_content{
+.background_image{
 	background-image:url(images/strips2.png);
-	background-position: 97.6% 0%;
+	background-position: right;
 	background-repeat-x: no-repeat;
 }
 .paragraphs > h1{
@@ -97,17 +97,15 @@ body{
 		text-align: center;
 	}
 	
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
 	.main_content{
 		background-image:url(images/strips2.png);
-		background-position: 98.2% 0%;
 		background-repeat-x: no-repeat;
 	}
 }
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
 	.main_content{
 		background-image:url(images/strips2.png);
-		background-position: 96.4% 0%;
 		background-repeat-x: no-repeat;
 	}
 }
