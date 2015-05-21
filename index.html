@@ -7,16 +7,17 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
 <div class="container">
 	<div class="header col-sm-12">
-		<img class="col-sm-12" src="images/header.png">
-			<ul class='nav navbar-nav pull-right'>
+		<img class="col-sm-12 hidden-xs" src="images/header.png">
+			<ul class='nav navbar-nav navbar-collapse pull-right'>
 				<li class="active"><a href="index.html">HOME</a>
 				<li><a href="#">ABOUT US</a></li>
 				<li><a href="#">SERVICES</a></li>
-				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">CONTACT</a></li>	
 			</ul>
 	</div>
 	<div class="main_image col-sm-12">
@@ -40,7 +41,7 @@
 			</div>
 			<div class="orange_columns col-sm-4">
 			<img src="images/dots-box2.png" class="white_dots">
-			<img src="images/strips2.png" class="strips2 col-sm-12">
+			<img src="images/strips2.png" class="strips2 col-sm-12 hidden-xs">
 			</div>
 		</div>
 	</div>
@@ -48,7 +49,9 @@
 		<p class="col-sm-6 col-sm-offset-3 fancy">Please note you will be overwhelmed by the sweet content</p>
 	</div>
 	<div class="cupcakes_image col-sm-12">
-		<img src="images/cupcakes.png">
+		<div class="row">
+			<img src="images/cupcakes.png" class="col-sm-12">
+		</div>
 	</div>
 	
 	<footer class="footer col-sm-12">
