@@ -11,8 +11,9 @@ body{
 	margin-right: 35px;
 }
 .strips2{
-	height: 80vh;
+	opacity: 0;
 	padding: 0;
+
 }
 .fancy{
 	font-family: 'Monotype Corsiva', 'Apple Chancery', 'ITC Zapf Chancery', 'URW Chancery L', cursive;
@@ -26,6 +27,11 @@ body{
 .pitch2{
 	margin-top: 5%;
 }
+.main_content{
+	background-image:url(images/strips2.png);
+	background-position: 97.6% 0%;
+	background-repeat-x: no-repeat;
+}
 .paragraphs > h1{
 	font-size: 16px;
   	font-weight: 600;
@@ -35,6 +41,7 @@ body{
 .paragraphs > p{
 	font-size: 15px;
 	margin-bottom: 2%;
+	
 }
 /* FOOTER STYLING */
 .footer {
@@ -49,8 +56,7 @@ body{
 .white_dots{
 	position: absolute;
 	top: 3%;
-	right: 15%;
-	z-index: 1;
+	right: 4%;
 }
 
 .footer_text{
@@ -65,11 +71,43 @@ body{
 	font-size: 11px;
 	text-align: center;
 }
-@media (max-width: 800px) {
-	.paragraphs{
+@media (max-width: 768px) {
+	.main_content{
 		background-image:url(images/strips2.png);
-		background-size:content;
+		background-size:contain;
 		color: whitesmoke;
 		text-shadow:2px 2px 0px black;
+	}
+	.footer_text{
+		margin-top: 0%;
+		color: white;
+		font-size: 10px;
+		text-align: center
+	}
+	.phone{
+		font-size: 8px;
+		margin-top: 6%;
+		margin-bottom: 2%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.copyright{
+		margin-top: 5%;
+		font-size: 6px;
+		text-align: center;
+	}
+	
+@media (min-width: 1201px) {
+	.main_content{
+		background-image:url(images/strips2.png);
+		background-position: 98.2% 0%;
+		background-repeat-x: no-repeat;
+	}
+}
+@media (max-width: 992px) {
+	.main_content{
+		background-image:url(images/strips2.png);
+		background-position: 96.4% 0%;
+		background-repeat-x: no-repeat;
 	}
 }
