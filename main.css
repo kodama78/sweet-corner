@@ -1,4 +1,8 @@
 
+body{	
+    color: #754b23;
+    font-family: Verdana, Geneva, sans-serif;
+}
 .brown_bar{
 	height: 24px;
 	background-color: #754b23;
@@ -7,7 +11,7 @@
 	margin-right: 35px;
 }
 .strips2{
-	height: 400px;
+	height: 60vh;
 	padding: 0;
 }
 .footer {
@@ -17,4 +21,15 @@
 .footer div{
 	background-color: #06b4af;	
 	height: 100%;
+}
+.fancy{
+	font-family: 'Monotype Corsiva', 'Apple Chancery', 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    font-weight: 200;
+    font-size: 20px;
+}
+.white_dots{
+	position: absolute;
+	top: 3%;
+	right: 15%;
+	z-index: 1;
 }
