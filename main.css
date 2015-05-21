@@ -84,7 +84,10 @@ body{
 	.main_content{
 		color: rgb(19, 10, 2);
 	  	font-weight: 600;
-		}
+	}
+	.logo{
+		margin-left: -15px;
+	}
 	.background_image{
 		opacity: 0.8;
 	}
