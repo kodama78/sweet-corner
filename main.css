@@ -43,7 +43,9 @@ body{
 	margin-bottom: 2%;
 	
 }
-
+.cupcakes_image{
+	padding: 0;
+}
 /*
 ======================================
 		CONTACT FORM STYLING
