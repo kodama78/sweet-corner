@@ -1,5 +1,5 @@
 var menu_links = {
-	home: {
+	'home': {
 		text: 'home',
 		file: 'home.html',
 		default: true
@@ -7,13 +7,22 @@ var menu_links = {
 	'about us': {
 		text: 'about us',
 		file: 'about.html'
+	},
+	'services': {
+		text: 'services',
+		file: 'services.html'
+	},
+	'contact': {
+		text: 'contact',
+		file: 'contact.html'
 	}
 }
 function attach_links(){
 	for (key in menu_links){
 		var li = $('<li>');
 		var a = $('<a>',{
-			text:menu_links[key].text
+			text:menu_links[key].text,
+			class: 'nav_bar_link_style'
 		}).click(function(){
 			load_page($(this).text());
 		});
@@ -32,6 +41,7 @@ function load_page(page){
 		dataType: 'html',
 		cache: false,
 		success: function(response){
+			$('#main_content_area').html('');
 			$('#main_content_area').append(response);
 		}
 
