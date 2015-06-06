@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <?php 
+        $pages = [
+                    'home'=>'pages/home.php',
+                    'about'=>'pages/about.php',
+                    'services'=>'pages/services.php',
+                    'contact'=>'pages/contact.php',
+                ];
+    ?>
+
 </head>
 
 <body>
@@ -23,7 +32,7 @@
                         <span class="icon-bar iconbar3"></span>
                     </button>
                 </div>
-                <div class="row visible-xs">
+                <!-- <div class="row visible-xs">
                     <nav class="navbar-collapse bs-navbar-collapse collapse col-xs-12">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="index.html">HOME</a></li>
@@ -32,10 +41,14 @@
                             <li><a href="contact.html">CONTACT</a></li>
                         </ul>
                     </nav>
-                </div>
+                </div> -->
                 <div class="row hidden-xs">
                     <ul class='nav navbar-nav navbar-collapse pull-right'>
+                        <li class="active"><a href="index.php?page=home">HOME</a></li>
                         
+                        <li><a href="index.php?page=about">ABOUT US</a></li>
+                        <li><a href="index.php?page=services">SERVICES</a></li>
+                        <li><a href="index.php?page=contact">CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="main_image col-sm-12">
@@ -47,7 +60,15 @@
         </header>
         <!--MAIN CONTENT AREA -->
         <div class="main_content col-sm-12" id="main_content_area">
-         
+
+            <?php
+                 if(!isset($_GET['page'])){
+                    include($pages['home']);
+                } else
+                {
+                    include ($pages[$_GET['page']]);
+                }
+            ?>
         </div>
         <footer class="footer col-sm-12 col-xs-12">
             <div class="col-sm-12 col-xs-12">

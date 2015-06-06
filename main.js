@@ -49,5 +49,5 @@ function load_page(page){
 		
 }
 $(document).ready(function(){
-	attach_links();	
+	// attach_links();	
 });

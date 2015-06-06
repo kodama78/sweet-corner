@@ -11,15 +11,15 @@
                     <img src="images/up-dots.png" class="col-sm-3 col-sm-offset-6 hidden-xs">
                 </div>
                 <div class="contact_form col-sm-4 col-xs-12">
-                    <form role="form" class="col-sm-12 col-xs-12">
+                    <form role="form" action="formhandler.php" method="post"class="col-sm-12 col-xs-12">
                         <div class="form-group col-sm-12 col-xs-12">
                             <p>Contact Form</p>
                             <!-- <label for="name"></label> -->
-                            <input type="text" class="form-control contact_form" id="name" placeholder="Name">
-                            <input type="text" class="form-control contact_form" id="email" placeholder="Email">
-                            <input type="text" class="form-control contact_form" id="phone" placeholder="Phone">
-                            <input type="text" class="form-control contact_form" id="subject" placeholder="Subject">
-                            <textarea class="contact_form form-control" id="message" type="text-area" placeholder="Message">
+                            <input type="text" class="form-control contact_form" id="name" name="name"placeholder="Name">
+                            <input type="text" class="form-control contact_form" id="email" name="email" placeholder="Email">
+                            <input type="text" class="form-control contact_form" id="phone" name="phone" placeholder="Phone">
+                            <input type="text" class="form-control contact_form" id="subject" name="subject" placeholder="Subject">
+                            <textarea class="contact_form form-control" id="message" name="message" type="text-area" placeholder="Message">
                             </textarea>
                             <button type="submit" class="btn btn-default pull-right" id="form_button">SEND</button>
                         </div>
