@@ -60,9 +60,8 @@
         </header>
         <!--MAIN CONTENT AREA -->
         <div class="main_content col-sm-12" id="main_content_area">
-
             <?php
-                 if(!isset($_GET['page'])){
+                if(!isset($_GET['page'])){
                     include($pages['home']);
                 } else
                 {
